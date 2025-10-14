@@ -16,15 +16,21 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
   - type: dnf
     repos:
+      files:
+        - https://yum.voxpupuli.org/repo_files/openvox8-release-fedora41.repo
+      keys: 
+        - https://yum.voxpupuli.org/GPG-KEY-openvox.pub
       copr:
         - atim/starship
     install:
       packages:
         - micro
         - starship
+        - openvox-agent
+    optfix:
+      - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
