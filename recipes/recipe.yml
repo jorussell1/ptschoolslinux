@@ -29,6 +29,17 @@ modules:
         - micro
         - starship
         - openvox-agent
+        - realm
+        - sssd
+        - sssd-ad
+        - oddjob
+        - oddjob-mkhomedir
+        - adcli
+        - samba-common
+        - samba-common-tools
+        - krb5-workstation
+        - openldap-clients
+        - authselect
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
