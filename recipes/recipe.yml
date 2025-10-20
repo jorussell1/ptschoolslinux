@@ -16,6 +16,8 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+      - source: backgrounds
+        destination: /usr/share/backgrounds/
   - type: dnf
     repos:
       files:
@@ -49,6 +51,17 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+  - type: gnome-extensions
+    install:
+      - Apps Menu
+      - Places Status Indicator
+      - Dash to Panel
+      - Workspace Indicator
+      - 4099 # https://extensions.gnome.org/extension/4099/no-overview/
+      - 2087 # https://extensions.gnome.org/extension/2087/desktop-icons-ng-ding/
+  - type: gschema-overrides
+    include:
+      - zz1-ptschools.gschema.override
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
@@ -56,6 +69,9 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - com.google.Chrome
+          - io.github.kolunmi.Bazaar
+          - org.gnome.Calendar
+          - org.libreoffice.LibreOffice
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
