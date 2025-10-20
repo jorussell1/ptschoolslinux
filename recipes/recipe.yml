@@ -58,7 +58,7 @@ modules:
       - Dash to Panel
       - Workspace Indicator
       - 4099 # https://extensions.gnome.org/extension/4099/no-overview/
-      - 2087 # https://extensions.gnome.org/extension/2087/desktop-icons-ng-ding/
+      - 5263 # https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/
   - type: gschema-overrides
     include:
       - zz1-ptschools.gschema.override
