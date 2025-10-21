@@ -1,0 +1,20 @@
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/ptschoolslinux/sense_of_place.png'
+picture-options='scaled'
+
+[org.gnome.shell]
+favorite-apps=['com.google.Chrome.desktop','org.gnome.Nautilus.desktop','io.github.kolunmi.Bazaar.desktop', 'org.gnome.Calendar.desktop','org.libreoffice.LibreOffice.desktop']
+
+[org.gnome.desktop.wm.preferences]
+button-layout='icon:minimize,maximize,close'
+
+[org.gnome.desktop.wm.preferences]
+mouse-button-modifier='<Super>'
+resize-with-right-button=true
+
+[org.gnome.desktop.a11y]
+always-show-universal-access-status=true
+
+[org.gnome.shell]
+enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com','places-menu@gnome-shell-extensions.gcampax.github.com','dash-to-panel@jderose9.github.com','workspace-indicator@gnome-shell-extensions.gcampax.github.com','no-overview@fthx']
+
