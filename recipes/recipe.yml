@@ -29,6 +29,8 @@ modules:
         - https://yum.voxpupuli.org/GPG-KEY-openvox.pub
       copr:
         - atim/starship
+      cleanup:
+        true
     install:
       packages:
         - micro
@@ -82,5 +84,9 @@ modules:
           - io.github.flattool.Warehouse
           - org.videolan.VLC
       - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: script
+    snippets:
+      - 'cd $CONFIG_DIRECTORY/scripts && for script in *.sh; do [ -f "$script" ] && bash "$script"; done'
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
