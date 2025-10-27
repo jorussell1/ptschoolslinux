@@ -45,6 +45,8 @@ modules:
         - krb5-workstation
         - openldap-clients
         - authselect
+        - gutenprint-cups
+        - dymo-cups-drivers
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
