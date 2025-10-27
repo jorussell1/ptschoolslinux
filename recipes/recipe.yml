@@ -47,6 +47,7 @@ modules:
         - authselect
         - gutenprint-cups
         - dymo-cups-drivers
+        - glabels
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
