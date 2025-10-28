@@ -50,6 +50,8 @@ modules:
         - gutenprint-cups
         - dymo-cups-drivers
         - glabels
+        - cheese
+        - distrobox
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
