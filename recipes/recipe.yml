@@ -50,7 +50,6 @@ modules:
         - gutenprint-cups
         - dymo-cups-drivers
         - glabels
-        - cheese
         - distrobox
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
@@ -85,6 +84,7 @@ modules:
           - org.gnome.Firmware
           - io.github.flattool.Warehouse
           - org.videolan.VLC
+          - org.gnome.Snapshot
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: script
