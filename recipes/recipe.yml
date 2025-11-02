@@ -50,8 +50,8 @@ modules:
         - gutenprint-cups
         - dymo-cups-drivers
         - glabels
-        - cheese
         - distrobox
+        - restic
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
@@ -66,8 +66,10 @@ modules:
       - Apps Menu
       - Places Status Indicator
       - Dash to Panel
-      - Workspace Indicator
       - 4099 # https://extensions.gnome.org/extension/4099/no-overview/
+      - Wiggle
+      - Grand Theft Focus
+      - Caffeine
   - type: gschema-overrides
     include:
       - zz1-ptschools.gschema.override
@@ -85,6 +87,7 @@ modules:
           - org.gnome.Firmware
           - io.github.flattool.Warehouse
           - org.videolan.VLC
+          - org.gnome.Snapshot
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: script
