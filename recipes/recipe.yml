@@ -51,6 +51,7 @@ modules:
         - dymo-cups-drivers
         - glabels
         - distrobox
+        - restic
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
