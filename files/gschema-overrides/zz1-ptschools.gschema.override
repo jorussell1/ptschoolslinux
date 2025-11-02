@@ -16,5 +16,5 @@ resize-with-right-button=true
 always-show-universal-access-status=true
 
 [org.gnome.shell]
-enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com','places-menu@gnome-shell-extensions.gcampax.github.com','dash-to-panel@jderose9.github.com','workspace-indicator@gnome-shell-extensions.gcampax.github.com','no-overview@fthx']
+enabled-extensions=['dash-to-panel@jderose9.github.com','no-overview@fthx', 'wiggle@mechtifs', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info']
 

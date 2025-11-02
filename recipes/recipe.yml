@@ -65,8 +65,10 @@ modules:
       - Apps Menu
       - Places Status Indicator
       - Dash to Panel
-      - Workspace Indicator
       - 4099 # https://extensions.gnome.org/extension/4099/no-overview/
+      - Wiggle
+      - Grand Theft Focus
+      - Caffeine
   - type: gschema-overrides
     include:
       - zz1-ptschools.gschema.override
