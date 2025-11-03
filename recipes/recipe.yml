@@ -87,7 +87,7 @@ modules:
           - org.gnome.Firmware
           - io.github.flattool.Warehouse
           - org.videolan.VLC
-          - org.gnome.Snapshot
+          - io.github.webcamoid.Webcamoid
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: script
