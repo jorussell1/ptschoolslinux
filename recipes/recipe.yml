@@ -52,6 +52,7 @@ modules:
         - glabels
         - distrobox
         - restic
+        - evince
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
