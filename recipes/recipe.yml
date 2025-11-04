@@ -52,6 +52,7 @@ modules:
         - glabels
         - distrobox
         - restic
+        - evince
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
@@ -87,7 +88,7 @@ modules:
           - org.gnome.Firmware
           - io.github.flattool.Warehouse
           - org.videolan.VLC
-          - org.gnome.Snapshot
+          - io.github.webcamoid.Webcamoid
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: script
