@@ -12,3 +12,7 @@ image-version: gts
 modules:
   - from-file: common-modules.yml
   - from-file: common-flatpaks.yml
+  - type: files
+    files:
+      - source: kde
+        destination: /
