@@ -1,0 +1,7 @@
+# copied from https://github.com/ublue-os/aurora/tree/main/system_files/shared/usr/share/kde-settings/kde-profile/default/xdg
+[General]
+FreeFloating=true
+[Plugins]
+# Disable Discover, enable bazaar search results
+krunner_appstreamEnabled=false
+bazaarrunnerEnabled=true
