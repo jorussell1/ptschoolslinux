@@ -4,7 +4,7 @@ modules:
   - type: dnf
     install:
       packages:
-        - eog
+        - loupe
         - evince
   - type: gnome-extensions
     install:
