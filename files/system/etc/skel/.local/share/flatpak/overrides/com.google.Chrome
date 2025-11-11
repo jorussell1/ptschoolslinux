@@ -1,0 +1,2 @@
+[Context]
+filesystems=~/.local/share/applications:create;~/.local/share/icons:create

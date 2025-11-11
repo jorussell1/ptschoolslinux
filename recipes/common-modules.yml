@@ -42,7 +42,7 @@ modules:
         - glabels
         - distrobox
         - restic
-        - evince
+        - deja-dup
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
