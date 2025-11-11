@@ -1,0 +1,22 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+modules:
+  - type: dnf
+    install:
+      packages:
+        - eog
+        - evince
+  - type: gnome-extensions
+    install:
+      - Apps Menu
+      - Places Status Indicator
+      - Dash to Panel
+      - 4099 # https://extensions.gnome.org/extension/4099/no-overview/
+      - Wiggle
+      - Grand Theft Focus
+      - Caffeine
+  - type: gschema-overrides
+    include:
+      - zz1-ptschools.gschema.override
+
+

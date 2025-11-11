@@ -16,5 +16,6 @@ modules:
         - io.github.flattool.Warehouse
         - org.videolan.VLC
         - io.github.webcamoid.Webcamoid
+        - org.keepassxc.KeePassXC
       - scope: user # Also add Flathub user repo, but no user packages
 
