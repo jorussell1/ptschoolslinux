@@ -18,5 +18,10 @@ modules:
   - type: gschema-overrides
     include:
       - zz1-ptschools.gschema.override
-
+  - type: default-flatpaks
+    configurations:
+      - notify: false # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        install: 
+        - org.gnome.Calendar
 
