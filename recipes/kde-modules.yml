@@ -5,7 +5,7 @@ modules:
     install:
       packages:
         - gwenview
-        - okular
+        - evince
   - type: files
     files:
       - source: kde
