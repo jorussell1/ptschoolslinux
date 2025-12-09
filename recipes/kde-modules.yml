@@ -6,6 +6,14 @@ modules:
       packages:
         - gwenview
         - evince
+        - lightdm
+    remove:
+      packages:
+        - sddm
+  - type: systemd
+    system:  
+      enabled:
+        - lightdm.service
   - type: files
     files:
       - source: kde
