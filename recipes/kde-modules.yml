@@ -6,22 +6,23 @@ modules:
       packages:
         - gwenview
         - evince
-        - gdm
+        - lightdm
+        - lightdm-gtk
     remove:
       packages:
         - sddm
   - type: systemd
     system:  
       enabled:
-        - gdm.service
+        - lightdm.service
   - type: files
     files:
       - source: kde
         destination: /
   - type: script
     snippets:
-      - rm /usr/share/wayland-sessions/gnome.desktop
-      - rm /usr/share/wayland-sessions/gnome-wayland.desktop
+      #- rm /usr/share/wayland-sessions/gnome.desktop
+      #- rm /usr/share/wayland-sessions/gnome-wayland.desktop
       # This is needed to change the default panel favorites on kde and it's ugly and I don't like it
       - |
         sed -i '/<entry name="launchers" type="StringList">/,/<\/entry>/ s/<default>[^<]*<\/default>/<default>preferred:\/\/browser,applications:io.github.kolunmi.Bazaar.desktop,preferred:\/\/filemanager<\/default>/' /usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/config/main.xml
