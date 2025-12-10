@@ -20,6 +20,7 @@ modules:
         destination: /
   - type: script
     snippets:
+      # Remove the gnome session file so no one accidently clicks it
       - rm /usr/share/wayland-sessions/gnome.desktop
       - rm /usr/share/wayland-sessions/gnome-wayland.desktop
       # This is needed to change the default panel favorites on kde and it's ugly and I don't like it
