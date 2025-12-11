@@ -1,2 +1,5 @@
 [Context]
 filesystems=~/.local/share/applications:create;~/.local/share/icons:create
+
+[System Bus Policy]
+org.gnome.SessionManager=none
