@@ -14,7 +14,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://yum.voxpupuli.org/repo_files/openvox8-release-fedora41.repo
+        - https://yum.voxpupuli.org/repo_files/openvox8-release-fedora42.repo
       keys: 
         - https://yum.voxpupuli.org/GPG-KEY-openvox.pub
       copr:
