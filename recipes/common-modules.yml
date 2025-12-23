@@ -14,7 +14,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://yum.voxpupuli.org/repo_files/openvox8-release-fedora42.repo
+        - https://download.docker.com/linux/fedora/docker-ce.repo
       keys: 
         - https://yum.voxpupuli.org/GPG-KEY-openvox.pub
       copr:
@@ -45,6 +45,9 @@ modules:
         - deja-dup
         - autofs
         - evince
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
@@ -53,7 +56,10 @@ modules:
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
+  - type: systemd
+    system:
+      enabled:
+        - docker.service
   - type: fonts
     fonts: 
       nerd-fonts:
