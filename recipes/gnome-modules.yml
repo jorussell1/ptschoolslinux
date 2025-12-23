@@ -4,7 +4,8 @@ modules:
   - type: dnf
     install:
       packages:
-        - loupe
+        - loupe	
+        - gnome-tweaks
   - type: gnome-extensions
     install:
       - Apps Menu
