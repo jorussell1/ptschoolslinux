@@ -44,6 +44,7 @@ modules:
         - restic
         - deja-dup
         - autofs
+        - evince
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
