@@ -16,5 +16,7 @@ modules:
         - org.videolan.VLC
         - io.github.webcamoid.Webcamoid
         - org.keepassxc.KeePassXC
+        - org.gnome.Calculator
       - scope: user # Also add Flathub user repo, but no user packages
+        notify: false
 

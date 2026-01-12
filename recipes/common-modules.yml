@@ -14,7 +14,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://yum.voxpupuli.org/repo_files/openvox8-release-fedora41.repo
+        - https://yum.voxpupuli.org/repo_files/openvox8-release-fedora42.repo
       keys: 
         - https://yum.voxpupuli.org/GPG-KEY-openvox.pub
       copr:
@@ -43,6 +43,8 @@ modules:
         - distrobox
         - restic
         - deja-dup
+        - autofs
+        - evince
     optfix:
       - puppetlabs # openvox-agent install to /opt/puppetlabs
     remove:
@@ -52,6 +54,24 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+  - type: fonts
+    fonts: 
+      nerd-fonts:
+        - FiraCode
+        - Hack
+      google-fonts:
+        - Merriweather
+        - WorkSans
+        - Lora
+        - FiraSans
+        - Roboto
+        - Inter
+        - Montserrat
+      url-fonts:
+        - name: MapleMonoNF
+          url: https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-unhinted.zip
+        - name: MapleMono
+          url: https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-TTF.zip
   - type: script
     snippets:
       - 'cd $CONFIG_DIRECTORY/scripts && for script in *.sh; do [ -f "$script" ] && bash "$script"; done'
