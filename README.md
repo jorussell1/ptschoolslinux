@@ -9,8 +9,13 @@ Packages and configuration for joining and AD domain and running puppet are laye
 ## Available versions
 There are two version of ptschoolslinux: ptschoolslinux and ptschoolslinux-kinoite, based on [gnome](https://www.gnome.org/) and [kde](https://kde.org/) respectively.
 
+In the future there may be a cosmic version
 
-
+## Building
+### Pre-requisites
+You'll need to install the [blue-build-cli](https://github.com/blue-build/cli)
+### Build instructions
+You can use [just](https://just.systems/man/en/) to run the build recipes.
 ## Installation
 
 ### Rebasing from another fedora atomic OS
