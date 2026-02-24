@@ -34,6 +34,7 @@ modules:
         - adcli
         - samba-common
         - samba-common-tools
+        - samba-usershares
         - krb5-workstation
         - openldap-clients
         - authselect
