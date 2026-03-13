@@ -15,6 +15,7 @@ modules:
       - Wiggle
       - Grand Theft Focus
       - Caffeine
+      - 615 # https://extensions.gnome.org/extension/615/appindicator-support/
   - type: gschema-overrides
     include:
       - zz1-ptschools.gschema.override
