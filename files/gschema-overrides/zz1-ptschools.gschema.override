@@ -19,5 +19,5 @@ click-method='areas'
 always-show-universal-access-status=true
 
 [org.gnome.shell]
-enabled-extensions=['dash-to-panel@jderose9.github.com','no-overview@fthx', 'wiggle@mechtifs', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info', 'appindicatorsupport@rgcjonas.gmail.com']
+enabled-extensions=['dash-to-panel@jderose9.github.com','no-overview@fthx', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info', 'appindicatorsupport@rgcjonas.gmail.com']
 
