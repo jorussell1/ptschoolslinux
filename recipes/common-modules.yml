@@ -67,6 +67,7 @@ modules:
         - Roboto
         - Inter
         - Montserrat
+        - Lexend
       url-fonts:
         - name: MapleMonoNF
           url: https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-unhinted.zip
