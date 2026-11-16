@@ -68,6 +68,14 @@ modules:
         - Inter
         - Montserrat
         - Lexend
+        - LibreBarcode39
+        - LibreBarcode39Text
+        - LibreBarcode39ExtendedText
+        - LibreBarcode128
+        - LibreBarcode128Text
+        - LibreBarcode128ExtendedText
+        - LibreBarcodeEAN13Text
+
       url-fonts:
         - name: MapleMonoNF
           url: https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-unhinted.zip
