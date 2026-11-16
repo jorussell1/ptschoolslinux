@@ -68,13 +68,13 @@ modules:
         - Inter
         - Montserrat
         - Lexend
-        - LibreBarcode39
-        - LibreBarcode39Text
-        - LibreBarcode39ExtendedText
-        - LibreBarcode128
-        - LibreBarcode128Text
-        - LibreBarcode128ExtendedText
-        - LibreBarcodeEAN13Text
+        - Libre Barcode 39
+        - Libre Barcode 39 Text
+        - Libre Barcode 39 Extended Text
+        - Libre Barcode 128
+        - Libre Barcode 128 Text
+        - Libre Barcode 128 Extended Text
+        - Libre Barcode EAN13 Text
 
       url-fonts:
         - name: MapleMonoNF
